@@ -1,0 +1,53 @@
+body,
+html {
+  margin: 0;
+  height: 100%;
+  background-color: rgb(37, 27, 27);
+  color: beige;
+}
+img{
+   width: 90px; 
+   padding: 5px;
+}
+
+header {
+  display: flex;
+  height: 4rem;
+  border-bottom: solid grey 0.2rem;
+  flex-direction: row;
+}
+
+main {
+  min-height: 80vh;
+}
+
+footer {
+  text-align: center;
+}
+
+#product-images {
+  height: 10rem;
+  width: 80vw;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+}
+
+
+
+#product-images img {
+  width: 200px;
+  padding: 3rem;
+}
+
+#image-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  text-align: center;
+  padding-block: 2rem;
+}
+#results-section{
+    float:left;
+    
+}

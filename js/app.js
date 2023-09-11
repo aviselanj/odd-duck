@@ -1,6 +1,6 @@
 "use strict"
 
-const imageObj = {
+const state = {
    product:[
     new Product("bag", "/img/bag.jpg"),
     new Product("banana", "/img/banana.jpg"),
@@ -16,7 +16,7 @@ const imageObj = {
     new Product("pet-sweep", "/img/pet-sweep.jpg"),
     new Product("scissors", "/img/scissors.jpg"),
     new Product("shark", "/img/shark.jpg"),
-    new Product("sweep", "/img/sweep.jpg"),
+    new Product("sweep", "/img/sweep.png"),
     new Product("unicorn", "/img/unicorn.jpg"),
     new Product("water-can", "/img/water-can.jpg"),
     new Product("wine-glass", "/img/wine-glass.jpg"),
@@ -26,6 +26,7 @@ const imageObj = {
 };
 
 // constructor function for product
+
 function Product(name, filePath){
    this.name = name; 
    this.filePath = filePath;
@@ -44,19 +45,22 @@ Product.prototype.render = function(){
 function renderProduct(){
    state.imageContainer.innerHTML = "";
    state.imageContainer.addEventListener("click", handleClickProduct);
-
+ 
    let productOne = state.product[getRandomInt(0, state.product.length)];
    let productTwo = state.product[getRandomInt(0, state.product.length)];
-
-   while(productOne === productTwo){
-      productOne = state.product[getRandomInt(0, state.product.length)];
+   let productThree = state.product[getRandomInt(0, state.product.length)];
+   //let newArr = [];
+   for(let i = 0; i < 3; i++) {
+     productOne = state.product[getRandomInt(0, state.product.length)];
    }
-
+ 
    productOne.views++;
    productTwo.views++;
-
+   productThree.views++;
+ 
    productOne.render();
    productTwo.render();
+   productThree.render();
 }
 
 renderProduct();
