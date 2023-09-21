@@ -2,7 +2,7 @@ body,
 html {
   margin: 0;
   height: 100%;
-  background-color: rgb(37, 27, 27);
+  background-color: rgb(73, 43, 43);
   color: beige;
 }
 img{
@@ -26,28 +26,61 @@ footer {
 }
 
 #product-images {
+  display: flex;
   height: 10rem;
   width: 80vw;
-  margin: 0 auto;
-  margin-top: 2rem;
-
+  margin-top: 10em;
+ 
+  text-align: center;
+  align-items: center;
 }
 
 
 
 #product-images img {
+  height: 200px;
   width: 200px;
-  padding: 3rem;
+  padding: 4rem;
 }
 
 #image-container {
   display: flex;
   flex-direction: row;
   margin: 0 auto;
-  text-align: center;
   padding-block: 2rem;
+ 
+  align-items: center;
+  justify-items: center;
 }
 #results-section{
-    float:left;
-    
+  display: flex;
+}
+
+h2{
+  margin: 2em;
+  text-align: center;
+}
+.p-container{
+  display: flex;
+  justify-content: center;
+}
+p{
+  padding: 4rem;
+  text-wrap: wrap;
+  width: 50vw;
+}
+ul{
+ 
+  border: 1px solid wheat;
+ 
+}
+
+li {
+  list-style: none;
+  color: white;
+  font-size: 2rem;
+  background-color: rgb(37, 39, 216);
+  margin-block: 1rem;
+  padding: 1rem 2rem;
+  border-radius: 6px;
 }
